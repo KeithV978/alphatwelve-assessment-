@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src=""></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="/styles/sidebar.css" />
+    <link rel="stylesheet" href="/styles/summary.css" />
+    <link rel="stylesheet" href="/styles/events.css" />
+    <link rel="stylesheet" href="/styles/history.css" />
+    <link rel="stylesheet" href="/styles/carousel.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <title>AlphaTwelve Dashboard</title>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <!-- sidebar section -->
+      <nav class="side-bar">
+        <div class="top">
+          <div class="full-logo">Full Logo</div>
+          <span class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+        <div class="bottom">
+          <ul class="list">
+            <li class="list-item">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Home</p>
+            </li>
+            <li class="list-item">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Events</p>
+            </li>
+            <li class="list-item">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Speakers</p>
+            </li>
+            <li class="list-item">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Reports</p>
+            </li>
+            <li class="list-item">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Notifications</p>
+              <span class="tag">3</span>
+            </li>
+            <li class="list-item">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Messages</p>
+            </li>
+            <li class="list-item">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Settings</p>
+            </li>
+            <li class="list-item" onclick="">
+              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <p>Collapse</p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- main section -->
+      <main>
+        <!-- Event Summary -->
+        <section class="summary">
+          <p>Welcome! here's your summary</p>
+          <div class="summary-card-wrapper">
+            <div class="summary-card">
+              <p class="card-title">
+                Total Events
+                <i class="fa-solid fa-info"></i>
+              </p>
+              <p class="card-values">
+                100,000
+                <span class="percentage green">
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    style="margin-right: 4px"
+                  ></i>
+                  +5.0%</span
+                >
+              </p>
+            </div>
+
+            <div class="summary-card">
+              <p class="card-title">
+                Active Speakers
+                <i class="fa-solid fa-info"></i>
+              </p>
+              <p class="card-values">
+                25
+                <span class="percentage red">
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    style="margin-right: 4px"
+                  ></i>
+                  -5.0%</span
+                >
+              </p>
+            </div>
+            <div class="summary-card">
+              <p class="card-title">
+                Total Registrations
+                <i class="fa-solid fa-info"></i>
+              </p>
+              <p class="card-values">
+                300
+                <span class="percentage green">
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    style="margin-right: 4px"
+                  ></i>
+                  +5.0%</span
+                >
+              </p>
+            </div>
+            <div class="summary-card">
+              <p class="card-title">
+                Total Revenue
+                <i class="fa-solid fa-info"></i>
+              </p>
+              <p class="card-values">
+                $500,000
+                <span class="percentage green">
+                  <i
+                    class="fa-solid fa-arrow-right"
+                    style="margin-right: 4px"
+                  ></i>
+                  +5.0%</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Events -->
+        <section class="events">
+          <p>Event Registration per month</p>
+
+          <div class="contents-wrapper">
+            <!-- chat -->
+            <div class="chart">
+              <canvas id="myChart"></canvas>
+            </div>
+
+            <!-- carousel -->
+            <div class="carousel-container">
+              <div class="carousel-slide">
+                <div class="carousel-item">
+                  <img src="/assets/images/one.jpeg" alt="Image 1" />
+                  <div class="carousel-caption">
+                    <p class="title">Latest News & Updates</p>
+                    <p class="sub-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus saepe quod inventore fugit deserunt doloribus, nulla
+                      sequi suscipit! Officia, ipsam.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <div class="carousel-item">
+                  <img src="/assets/images/two.jpeg" alt="Image 2" />
+                  <div class="carousel-caption">
+                    <p class="title">Latest News & Updates</p>
+                    <p class="sub-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus saepe quod inventore fugit deserunt doloribus, nulla
+                      sequi suscipit! Officia, ipsam.
+                    </p>
+                  </div>
+                </div> -->
+
+                <!-- <div class="carousel-item">
+                  <img src="/assets/images/three.jpeg" alt="Image 3" />
+                  <div class="carousel-caption">
+                    <p class="title">Latest News & Updates</p>
+                    <p class="sub-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus saepe quod inventore fugit deserunt doloribus, nulla
+                      sequi suscipit! Officia, ipsam.
+                    </p>
+                  </div>
+                </div> -->
+              </div>
+              <i class="fas fa-chevron-left prev"></i>
+              <i class="fas fa-chevron-right next"></i>
+
+              <ul class="carousel-indicators">
+                <li class="active" data-slide-to="0"></li>
+                <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- History -->
+        <section class="history">
+          <p>Event History</p>
+          <div class="panel">
+            <div class="left">
+              <!-- Search bar -->
+              <div class="search-bar">
+                <span><i class="fa-solid fa-search"></i></span>
+                <input type="text" placeholder="Search..." />
+              </div>
+              <!-- Date  -->
+              <div class="dropdown">
+                <select title="date" class="date" name="date">
+                  <option>Date</option>
+                </select>
+              </div>
+              <!-- Status  -->
+              <div class="dropdown">
+                <select title="status" class="status" name="status">
+                  <option>Status</option>
+                </select>
+              </div>
+              <!-- Status  -->
+              <div class="dropdown">
+                <select title="status" class="status" name="status">
+                  <option>Name</option>
+                </select>
+              </div>
+
+              <!-- Results Total -->
+              <div class="result-total">
+                <p>Displaying 100 results</p>
+              </div>
+            </div>
+            <div class="right">
+              <!-- sort dropdown -->
+              <div class="sort">
+                <p>Sort:</p>
+                <div class="dropdown">
+                  <select
+                    title="most-recent"
+                    class="most-recent"
+                    name="most-recent"
+                  >
+                    <option>Most Recent</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- menu icon -->
+              <div class="menu-icon">
+                <i class="fa-solid fa-menorah"></i>
+              </div>
+
+              <!-- Export  -->
+              <div class="export-wrapper">
+                <i class="fa-solid fa-menorah"></i>
+                <button class="export">Export</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event history table -->
+          <div class="table-wrapper">
+            <table id="myTable">
+              <thead>
+                <tr>
+                  <th>Event Name</th>
+                  <th>Date</th>
+                  <th>Speaker</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Rows will be added here dynamically -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="footer"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="/scripts/chart.js"></script>
+  <script type="module" src="/scripts/index.js"></script>
+</html>

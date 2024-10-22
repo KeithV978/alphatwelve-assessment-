@@ -1,0 +1,39 @@
+:root {
+  --dark-text-color: #324154;
+  --light-text-color: #63748a;
+  --border-color: #f1f4f9;
+  --font-size-large: 1.5rem;
+  --font-size-medium: 1.2rem;
+  --font-size-small: 1rem;
+  --font-size-x-small: 0.7rem;
+}
+
+section.events {
+  margin: 10px 0;
+}
+section.events > p {
+  font-size: var(--font-size-medium);
+  color: var(--dark-text-color);
+  font-weight: 600;
+  padding: 10px 0;
+}
+canvas#myChart {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  width: 50%;
+  height: 100%;
+}
+div.contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+div.chart,
+div.carousel-container {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  div.contents-wrapper {
+    flex-direction: row;
+  }
+}
