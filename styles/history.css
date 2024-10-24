@@ -103,7 +103,8 @@ input::placeholder {
   color: #3c4a5d;
   font-weight: 600;
 }
-div.right .sort {
+div.right .sort,
+.row-sort {
   display: flex;
   flex-direction: row;
   gap: var(--flex-gap);
@@ -121,6 +122,13 @@ div.export-wrapper {
 div.footer {
   display: flex;
   flex-direction: row;
+}
+
+.pagination-numbers,
+.row-sort {
+  width: fit-content;
+}
+.number {
 }
 @media (min-width: 1024px) {
   .panel {

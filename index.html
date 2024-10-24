@@ -36,36 +36,48 @@
         <div class="bottom">
           <ul class="list">
             <li class="list-item">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon">
+                <i class="fa fa-house"></i>
+              </span>
               <p>Home</p>
             </li>
             <li class="list-item">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon">
+                <i class="fa fa-calendar-days"></i>
+              </span>
               <p>Events</p>
             </li>
             <li class="list-item">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon"
+                ><i class="fa-solid fa-microphone"></i
+              ></span>
               <p>Speakers</p>
             </li>
             <li class="list-item">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon"
+                ><i class="fa-solid fa-file-lines"></i
+              ></span>
               <p>Reports</p>
             </li>
             <li class="list-item">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon"><i class="fa-solid fa-bell"></i></span>
               <p>Notifications</p>
               <span class="tag">3</span>
             </li>
             <li class="list-item">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon"
+                ><i class="fa-solid fa-comments"></i
+              ></span>
               <p>Messages</p>
             </li>
             <li class="list-item">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon"><i class="fa-solid fa-gear"></i></span>
               <p>Settings</p>
             </li>
             <li class="list-item" onclick="">
-              <span class="list-icon"><i class="fa-solid fa-home"></i></span>
+              <span class="list-icon" style="rotate: -90deg"
+                ><i class="fa-solid fa-angles-up"></i
+              ></span>
               <p>Collapse</p>
             </li>
           </ul>
@@ -81,14 +93,14 @@
             <div class="summary-card">
               <p class="card-title">
                 Total Events
-                <i class="fa-solid fa-info"></i>
+                <i class="fa-solid fa-circle-info"></i>
               </p>
               <p class="card-values">
                 100,000
                 <span class="percentage green">
                   <i
                     class="fa-solid fa-arrow-right"
-                    style="margin-right: 4px"
+                    style="margin-right: 4px; rotate: -45deg"
                   ></i>
                   +5.0%</span
                 >
@@ -98,14 +110,14 @@
             <div class="summary-card">
               <p class="card-title">
                 Active Speakers
-                <i class="fa-solid fa-info"></i>
+                <i class="fa-solid fa-circle-info"></i>
               </p>
               <p class="card-values">
                 25
                 <span class="percentage red">
                   <i
                     class="fa-solid fa-arrow-right"
-                    style="margin-right: 4px"
+                    style="margin-right: 4px; rotate: 45deg"
                   ></i>
                   -5.0%</span
                 >
@@ -114,14 +126,14 @@
             <div class="summary-card">
               <p class="card-title">
                 Total Registrations
-                <i class="fa-solid fa-info"></i>
+                <i class="fa-solid fa-circle-info"></i>
               </p>
               <p class="card-values">
                 300
                 <span class="percentage green">
                   <i
                     class="fa-solid fa-arrow-right"
-                    style="margin-right: 4px"
+                    style="margin-right: 4px; rotate: -45deg"
                   ></i>
                   +5.0%</span
                 >
@@ -130,14 +142,14 @@
             <div class="summary-card">
               <p class="card-title">
                 Total Revenue
-                <i class="fa-solid fa-info"></i>
+                <i class="fa-solid fa-circle-info"></i>
               </p>
               <p class="card-values">
                 $500,000
                 <span class="percentage green">
                   <i
                     class="fa-solid fa-arrow-right"
-                    style="margin-right: 4px"
+                    style="margin-right: 4px; rotate: -45deg"
                   ></i>
                   +5.0%</span
                 >
@@ -286,7 +298,33 @@
             </table>
           </div>
 
-          <div class="footer"></div>
+          <div class="footer">
+            <!-- left side -->
+            <div class="pagination-numbers">
+              <!-- prev -->
+              <button title="prev" class="previous-page">
+                <i class="far-solid fa-chevron-left"></i>
+              </button>
+
+              <!-- page numbers -->
+              <div class="page-numbers"></div>
+
+              <!-- next -->
+              <button title="prev" class="next-page">
+                <i class="far-solid fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <!-- right side -->
+            <div class="row-sort">
+              <p>Show:</p>
+              <div class="dropdown">
+                <select title="show-rows" class="show-rows" name="show-rows">
+                  <option>10 Rows</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

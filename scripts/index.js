@@ -61,6 +61,12 @@
       speaker: "Guest Panel",
       status: "In Progress",
     },
+    {
+      eventName: "The Web3 Conference",
+      date: "2025-02-02",
+      speaker: "Guest Panel",
+      status: "In Progress",
+    },
   ];
 
   // Select the table body element
@@ -110,7 +116,7 @@
   populateTable(data);
 
   // Add event listener to filter input
-  const filterInput = document.querySelector("#filterInput");
+  const filterInput = document.querySelector(".most-recent");
 
   filterInput.addEventListener("input", function () {
     const filterValue = this.value.toLowerCase(); // Get input value in lowercase
@@ -127,4 +133,14 @@
     // Repopulate the table with the filtered data
     populateTable(filteredData);
   });
+
+  // The pagination controls at the bottom
+  const paginationCtrlWrapper = $(".page-numbers")[0];
+  const backward = $(".previous-page")[0];
+  const forward = $(".next-page")[0];
+  const numbers = document.createElement("span").classList("number");
+
+  for (let i = 0; i < [1, 2, 3].length; i++) {
+    paginationCtrlWrapper.appendChild();
+  }
 })();

@@ -30,6 +30,7 @@ nav.side-bar {
   cursor: pointer;
   position: relative;
   padding: 5px;
+  margin: 15px 0;
   transition: all 0.3s ease-in;
   margin-bottom: 10px;
 }
@@ -61,13 +62,6 @@ nav.side-bar {
   }
 } */
 @media (min-width: 1024px) {
-  h5,
-  h6 {
-    /* margin-bottom: 10px; */
-  }
-  p {
-    /* margin-bottom: 20px; */
-  }
   nav.side-bar {
     max-width: 250px;
     padding: 10px;

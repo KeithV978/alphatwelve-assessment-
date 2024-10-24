@@ -17,6 +17,8 @@
   new Chart(document.getElementById("myChart"), {
     type: "bar",
     options: {
+      responsive: true, // Makes the chart responsive
+      maintainAspectRatio: false,
       animation: false,
       plugins: {
         legend: {
@@ -27,15 +29,16 @@
         },
       },
       scales: {
-        x: { grid: { display: false } },
-        y: { grid: { display: true, borderDash: [15, 15] }, beginAtZero: true },
+        x: { grid: { display: true, borderDash: [50, 50] } },
+        y: { grid: { display: true, borderDash: [50, 50] }, beginAtZero: true },
       },
     },
     data: {
       labels: data.map((row) => row.month),
       datasets: [
         {
-          label: "Acquisitions by month",
+          backgroundColor: "#8576ff",
+          label: "Events",
           data: data.map((row) => row.count),
         },
       ],
